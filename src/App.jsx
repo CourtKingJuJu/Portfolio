@@ -1,5 +1,6 @@
 import footballImg from './assets/football.webp';
 import consensusImg from './assets/consensus_2025.webp';
+import rockClimb from './assets/r_climb.webp';
 
 function App() {
   return (
@@ -9,12 +10,10 @@ function App() {
         className='mx-auto max-w-[860px] px-5 pb-14 pt-[72px] sm:px-10'
         aria-label='Introduction'
       >
-        <div className='mb-8 inline-flex items-center gap-[7px] rounded-sm border border-[#4F8EF7]/25 bg-[#4F8EF7]/12 px-[14px] py-[5px] text-[11px] font-medium uppercase tracking-[0.12em] text-[#4F8EF7]'>
-          <span
-            className='h-1.5 w-1.5 shrink-0 rounded-full bg-[#4F8EF7] animate-blink'
-            aria-hidden
-          />
-          Hello!
+        <div className='inline-flex items-center gap-[7px] text-[11px] tracking-[0.12em] uppercase text-[#4F8EF7] border border-[#4F8EF7]/40 bg-[#4F8EF7]/10 px-[14px] py-[5px] rounded-[3px] mb-8'>
+          {/* blinking dot */}
+          <span className='w-[6px] h-[6px] bg-[#4F8EF7] rounded-full animate-pulse' />
+          Hero Badge
         </div>
 
         <h1 className='font-display text-[clamp(40px,8vw,72px)] font-extrabold leading-[0.96] tracking-[-0.03em] text-white'>
@@ -24,7 +23,8 @@ function App() {
         </h1>
 
         <p className='mt-5 max-w-[480px] text-[15px] leading-relaxed text-zinc-400 sm:text-base'>
-          Fourth Year Co-op Computer Science Student @ Dalhousie
+          Fourth Year Co-op Computer Science Student | Dalhousie Football Strong
+          intrests in AI/ML!
         </p>
 
         <div className='mt-8 flex flex-wrap gap-2.5'>
@@ -68,18 +68,17 @@ function App() {
                 My name is Julian McCarty. I am a fourth year co-op computer
                 science student at Dalhousie and I also play Football! Along
                 with Football I participated in multiple other extra criculars
-                such as hackathons and the Dalhousie Blockchain society as a
-                developer. I am always open connecting or trying something new,
-                so feel free to reach out.
+                such as a Developer with the Dalhousie Blockchain Society.
               </p>
 
               <p>
-                long with my CS degree I am working towards a certificate in ML
-                & AI at Dalhousie. I am very intrested in ML & AI specifically
-                Reinforcement Learning and would love to continue working in the
-                field in some degree after school. I really enjoy hearing
-                different perspectives about ML & AI in ethics or just general
-                discussion and would love to hear what you think about it!
+                Additionally, with my CS degree I am working towards a
+                certificate in ML & AI at Dalhousie. I am very intrested in ML &
+                AI specifically Reinforcement Learning and would love to
+                continue working in the field in some degree after school. I
+                really enjoy hearing different perspectives about the topic in
+                ethics or just general discussion and would love to hear what
+                you think about it!
               </p>
 
               <p>
@@ -115,6 +114,18 @@ function App() {
               </div>
               <p className='border-t border-white/[0.07] px-2.5 py-2 text-[10px] uppercase tracking-[0.06em] text-zinc-500'>
                 2025 Consensus Hackathon
+              </p>
+            </div>
+            <div className='overflow-hidden rounded-lg border border-white/[0.07] bg-[#18181f]'>
+              <div className='group overflow-hidden'>
+                <img
+                  src={rockClimb}
+                  alt='Second'
+                  className='block h-[150px] w-full object-cover transition duration-500 group-hover:scale-[1.04]'
+                />
+              </div>
+              <p className='border-t border-white/[0.07] px-2.5 py-2 text-[10px] uppercase tracking-[0.06em] text-zinc-500'>
+                Rock Climbing
               </p>
             </div>
           </div>
@@ -244,7 +255,7 @@ function App() {
 
             <div className='mt-6 flex flex-wrap justify-center gap-3'>
               <a
-                className='inline-flex items-center gap-2 rounded-md border border-white/[0.12] px-4 py-2 text-sm font-medium text-zinc-300 transition-colors hover:border-[#4F8EF7] hover:bg-[#4F8EF7]/10 hover:text-white'
+                className='inline-flex items-center gap-2 rounded-md border border-white/0.12 px-4 py-2 text-sm font-medium text-zinc-300 transition-colors hover:border-[#4F8EF7] hover:bg-[#4F8EF7]/10 hover:text-white'
                 href='https://www.linkedin.com/in/julian-mccarty-a34380291/'
                 target='_blank'
                 rel='noreferrer'
@@ -253,7 +264,7 @@ function App() {
               </a>
 
               <a
-                className='inline-flex items-center gap-2 rounded-md border border-white/[0.12] px-4 py-2 text-sm font-medium text-zinc-300 transition-colors hover:border-[#4F8EF7] hover:bg-[#4F8EF7]/10 hover:text-white'
+                className='inline-flex items-center gap-2 rounded-md border border-white/0.12 px-4 py-2 text-sm font-medium text-zinc-300 transition-colors hover:border-[#4F8EF7] hover:bg-[#4F8EF7]/10 hover:text-white'
                 href='https://x.com/KingJuju00'
                 target='_blank'
                 rel='noreferrer'
