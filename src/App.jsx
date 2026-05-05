@@ -207,12 +207,9 @@ function App() {
             <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
               <h2 className='m-0 text-[1.15em] font-bold'>QuickFacts Inc</h2>
               <p className='mt-2 leading-normal text-zinc-400'>
-                {
-                  "My first real co-op as a Software Intern at a step up company QuickFacts. I worked on the front and backend and got experience moving data to the new custom CMS system we we're making."
-                }
-              </p>
-              <p className='mt-2 leading-normal text-zinc-400'>
-                I didn&apos;t even remove the jumper 🤣
+                My first real co-op as a Software Intern at a step up company
+                QuickFacts. I worked on the front and backend and got experience
+                moving data to the new custom CMS system we we're making."
               </p>
             </div>
             <div className='relative bg-white/20'>
@@ -227,7 +224,7 @@ function App() {
             </div>
             <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
               <h2 className='m-0 text-[1.15em] font-bold'>
-                Geospectrum Technologies Inc.
+                Geospectrum Technologies
               </h2>
               <p className='mt-2 leading-normal text-zinc-400'>
                 I worked as a Software Quality Assurance co-op at GTI. At GTI I
@@ -253,7 +250,7 @@ function App() {
               Looking to Connect!
             </p>
             <p className='mt-3 text-sm leading-relaxed text-zinc-400 sm:text-base'>
-              Reach out about anything — opportunities, projects, or just to
+              Reach out about anything. Opportunities, projects, or just to
               chat.
             </p>
           </div>
