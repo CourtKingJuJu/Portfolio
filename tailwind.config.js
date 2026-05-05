@@ -2,7 +2,21 @@
 export default {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Syne', 'system-ui', 'sans-serif'],
+      },
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.25' },
+        },
+      },
+      animation: {
+        blink: 'blink 2s infinite',
+      },
+    },
   },
   plugins: [],
 }
