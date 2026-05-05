@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,76 +10,17 @@ function App() {
           id="center"
           className="flex flex-1 flex-col items-center justify-center gap-6 py-10 text-center sm:gap-7 sm:py-16"
         >
-          <div className="relative h-[179px] w-[170px]">
-            <img
-              src={heroImg}
-              className="absolute inset-0 m-auto h-[179px] w-[170px]"
-              width="170"
-              height="179"
-              alt=""
-            />
-            <img
-              src={reactLogo}
-              className="absolute left-1/2 top-[34px] z-10 h-7 -translate-x-1/2 transform-[perspective(2000px)_rotateZ(300deg)_rotateX(44deg)_rotateY(39deg)_scale(1.4)]"
-              alt="React logo"
-            />
-            <img
-              src={viteLogo}
-              className="absolute left-1/2 top-[107px] z-0 h-[26px] w-auto -translate-x-1/2 transform-[perspective(2000px)_rotateZ(300deg)_rotateX(40deg)_rotateY(39deg)_scale(0.8)]"
-              alt="Vite logo"
-            />
-          </div>
-
           <div className="space-y-3">
             <h1 className="text-4xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-6xl">
               Julian McCarty
             </h1>
             <p className="text-base leading-relaxed sm:text-lg">
-              Fourth Year Computer Science Student @ Dalhousie
+              Fourth Year Co-op Computer Science Student @ Dalhousie
             </p>
-          </div>
-
-          <div className="flex flex-col items-center gap-3 sm:flex-row">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center rounded-md bg-violet-600 px-4 py-2 text-sm font-medium text-white shadow-sm ring-1 ring-violet-600/20 transition hover:bg-violet-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400"
-              onClick={() => setCount((count) => count + 1)}
-            >
-              Count is {count}
-            </button>
-
-            <span className="text-sm text-zinc-500 dark:text-zinc-400">
-              Editing <code className="rounded bg-zinc-100 px-2 py-1 font-mono text-[13px] text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100">src/App.jsx</code> will hot reload.
-            </span>
-          </div>
-        </section>
-
-        <div className="h-12 border-t border-zinc-200 dark:border-zinc-800 sm:h-20" />
-
-        <section className="py-10 sm:py-14">
-          <div id="social" className="mx-auto max-w-3xl text-left">
-            <h2 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl">
-              Quick Intro
-            </h2>
-            <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-base">
-              Add a short intro here: what you build, what you’re looking for, and what makes you different.
-            </p>
-          </div>
-        </section>
-
-        <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl text-left">
-            <h2 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl">
-              Quick Connections
-            </h2>
-            <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-base">
-              LinkedIn, GitHub, (maybe) X/Twitter — put them as buttons below.
-            </p>
-
-            <div className="mt-5 flex flex-wrap gap-3">
+            <div className="mt-5 flex justify-center flex-wrap gap-3">
               <a
                 className="inline-flex items-center gap-2 rounded-md bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-900 ring-1 ring-zinc-200 transition hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-100 dark:ring-zinc-800 dark:hover:bg-zinc-800"
-                href="https://github.com/"
+                href="https://github.com/CourtKingJuJu"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -90,7 +28,7 @@ function App() {
               </a>
               <a
                 className="inline-flex items-center gap-2 rounded-md bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-900 ring-1 ring-zinc-200 transition hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-100 dark:ring-zinc-800 dark:hover:bg-zinc-800"
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/julian-mccarty-a34380291/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -102,22 +40,23 @@ function App() {
 
         <div className="h-12 border-t border-zinc-200 dark:border-zinc-800 sm:h-20" />
 
-        <section className="py-10 sm:py-14">
+        <section className="py-10 sm:py-5">
           <div className="mx-auto max-w-3xl text-left">
-            <h2 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl">
+            <h2 className="text-xl font-semibold flex justify-center tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl">
               About
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-base">
-              Replace this with a short paragraph about your interests, tech stack, and what you enjoy building.
+              I'm Julian McCarty. I am a fourth year computer science student at Dalhousie and I also play Football! Along with Football
+              I participated in multiple other. 
             </p>
           </div>
         </section>
 
         <div className="h-12 border-t border-zinc-200 dark:border-zinc-800 sm:h-20" />
 
-        <section className="py-10 sm:py-14">
+        <section className="py-10 sm:py-5">
           <div className="mx-auto max-w-3xl text-left">
-            <h2 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl">
+            <h2 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl flex justify-center">
               Projects
             </h2>
 
@@ -144,9 +83,9 @@ function App() {
 
         <div className="h-12 border-t border-zinc-200 dark:border-zinc-800 sm:h-20" />
 
-        <section className="py-10 sm:py-14">
+        <section className="py-10 sm:py-5">
           <div className="mx-auto max-w-3xl text-left">
-            <h2 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl">
+            <h2 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl flex justify-center">
               Work Experience
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-base">
@@ -157,9 +96,9 @@ function App() {
 
         <div className="h-12 border-t border-zinc-200 dark:border-zinc-800 sm:h-20" />
 
-        <section className="py-10 sm:py-14">
+        <section className="py-10 sm:py-5">
           <div className="mx-auto max-w-3xl text-left">
-            <h2 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl">
+            <h2 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-100 sm:text-2xl flex justify-center">
               Contact Me
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-base">
