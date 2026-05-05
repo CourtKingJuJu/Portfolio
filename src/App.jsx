@@ -60,7 +60,7 @@ function App() {
           {/* Text column */}
           <div className='text-left'>
             <h2 className='text-xl font-semibold tracking-tight text-[#4F8EF7] sm:text-2xl'>
-              About
+              Background
             </h2>
 
             <div className='mt-4 space-y-[14px] text-sm leading-relaxed text-zinc-400 sm:text-base sm:leading-[1.9]'>
@@ -147,18 +147,31 @@ function App() {
           <div className='mt-6 grid gap-3.5 sm:grid-cols-2'>
             <div className='cursor-default rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-colors hover:border-[#4F8EF7]'>
               <h3 className='text-sm font-semibold text-white'>
-                Project Title
+                Random Forest Feature Selection
               </h3>
               <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
-                One sentence description. Add tech stack + outcome.
+                Created a Random Forest Feature selection for the cancerous
+                turmor dataset from scikitlearn. Has the opportunity to be
+                extended with a secondary Genetic Algorithm Selection.
               </p>
             </div>
             <div className='cursor-default rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-colors hover:border-[#4F8EF7]'>
               <h3 className='text-sm font-semibold text-white'>
-                Project Title
+                Neural Network from Scratch
               </h3>
               <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
-                One sentence description. Add tech stack + outcome.
+                Implemented parts of a Neural Network from scratch by following
+                a nnfs.io tutorial.
+              </p>
+            </div>
+            <div className='cursor-default rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-colors hover:border-[#4F8EF7]'>
+              <h3 className='text-sm font-semibold text-white'>SmartSplit</h3>
+              <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
+                Aptos Blockchain Hackathon Project. SmartSplit is a telegram bot
+                that allows users to use telegram commands to split money on the
+                Aptos Blockcahin. Worked in a two man team for this project
+                where I was responsible for learning the Aptos specific Move
+                Programming Language and Implment the Smart Contract
               </p>
             </div>
           </div>
