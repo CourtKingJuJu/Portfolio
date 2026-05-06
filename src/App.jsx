@@ -174,28 +174,43 @@ function App() {
                 Neural Network from Scratch
               </h3>
               <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
-                Implemented parts of a Neural Network from scratch by following
-                a nnfs.io tutorial.
+                Implemented parts of a Neural Network from scratch. This
+                included creating a fully connected network with multiple layers
+                to mimic a full pass and adding a softmax function for
+                non-linearity. Tutorial from nnfs.io.
               </p>
-              <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                Python
-              </span>
-              <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                Machine Learning
-              </span>
-              <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                Fully Connected Network
-              </span>
+              <div className='mt-3 flex flex-wrap gap-2'>
+                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                  Python
+                </span>
+                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                  Machine Learning
+                </span>
+                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                  FC Network
+                </span>
+              </div>
             </div>
             <div className='cursor-default rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-colors hover:border-[#4F8EF7]'>
               <h3 className='text-sm font-semibold text-white'>SmartSplit</h3>
               <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
-                Aptos Blockchain Hackathon Project. SmartSplit is a telegram bot
-                that allows users to use telegram commands to split money on the
-                Aptos Blockcahin. Worked in a two man team for this project
-                where I was responsible for learning the Aptos specific Move
-                Programming Language and Implment the Smart Contract
+                Aptos Blockchain Hackathon Project. SmartSplit is a Telegram bot
+                that allows users to use commands to split money on the Aptos
+                Blockchain. Worked in a two-man team, where I was responsible
+                for learning the Aptos-specific Move Programming Language and
+                implementing the Smart Contract
               </p>
+              <div className='mt-3 flex flex-wrap gap-2'>
+                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                  Blockchain
+                </span>
+                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                  Aptos Move
+                </span>
+                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                  Problem Solving
+                </span>
+              </div>
             </div>
           </div>
         </div>
