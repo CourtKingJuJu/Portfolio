@@ -3,6 +3,10 @@ import consensusImg from './assets/consensus_2025.webp';
 import rockClimb from './assets/r_climb.webp';
 
 function App() {
+  const handleProjectClick = (url) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <div className='min-h-dvh bg-[#09090b] font-sans text-[#e4e4e7] antialiased'>
       {/* Intro */}
@@ -146,7 +150,14 @@ function App() {
           </h2>
 
           <div className='mt-6 grid gap-3.5 sm:grid-cols-2'>
-            <div className='cursor-default rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-colors hover:border-[#4F8EF7]'>
+            <div
+              onClick={() =>
+                handleProjectClick(
+                  'https://github.com/CourtKingJuJu/Feature-Selection-RFIGA'
+                )
+              }
+              className='cursor-pointer rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] hover:border-[#4F8EF7] hover:-translate-y-1 transition-all'
+            >
               <h3 className='text-sm font-semibold text-white'>
                 Random Forest Feature Selection
               </h3>
@@ -169,7 +180,14 @@ function App() {
               </div>
             </div>
 
-            <div className='cursor-default rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-colors hover:border-[#4F8EF7]'>
+            <div
+              onClick={() =>
+                handleProjectClick(
+                  'https://github.com/CourtKingJuJu/Neural-Network'
+                )
+              }
+              className='cursor-pointer rounded-lg border border-white/[0.07] bg-[#111116] p-[22px]  hover:-translate-y-1 transition-all hover:border-[#4F8EF7]'
+            >
               <h3 className='text-sm font-semibold text-white'>
                 Neural Network from Scratch
               </h3>
@@ -191,7 +209,14 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className='cursor-default rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-colors hover:border-[#4F8EF7]'>
+            <div
+              onClick={() =>
+                handleProjectClick(
+                  'https://github.com/lennartschaeffer/SmartSplit-Consensus2025'
+                )
+              }
+              className='cursor-pointer rounded-lg border border-white/[0.07] bg-[#111116] p-[22px]  hover:-translate-y-1 transition-all hover:border-[#4F8EF7]'
+            >
               <h3 className='text-sm font-semibold text-white'>SmartSplit</h3>
               <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
                 Aptos Blockchain Hackathon Project. SmartSplit is a Telegram bot
