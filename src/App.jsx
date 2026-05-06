@@ -235,9 +235,9 @@ function App() {
                 Dexter Construction
               </h2>
               <p className='mt-2 leading-normal text-zinc-400'>
-                After not reciving my first co-op I decided to stay in the city
-                and work Construction, work on personal projects and build my
-                network. This made me lock in 🤣
+                After not receiving my first co-op, I decided to stay in the
+                city and work in construction. During this time, I worked on
+                personal projects and built my network. This made me lock in 🤣
               </p>
             </div>
 
@@ -245,9 +245,10 @@ function App() {
             <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
               <h2 className='m-0 text-[1.15em] font-bold'>QuickFacts Inc</h2>
               <p className='mt-2 leading-normal text-zinc-400'>
-                My first real co-op as a Software Intern at a step up company
-                QuickFacts. I worked on the front and backend and got experience
-                moving data to the new custom CMS system we we're making."
+                QuickFacts was a startup and my first real co-op experience. I
+                worked as a fully remote Software Intern. During that time, I
+                got experience with both front-end and back-end JavaScript, and
+                worked on moving real data into a custom CMS we were building.
               </p>
             </div>
             <div className='relative bg-white/20'>
@@ -265,10 +266,11 @@ function App() {
                 Geospectrum Technologies
               </h2>
               <p className='mt-2 leading-normal text-zinc-400'>
-                I worked as a Software Quality Assurance co-op at GTI. At GTI I
-                got to learn multiple tools like Unix, along with test
-                autmation. Notably I got to test their mission server and help
-                desgin extend the PLC simulator with an HTTP Server.
+                For my second co-op, I wanted to try working in person, so I
+                joined GTI as a Software QA Co-op. I helped write tests for
+                their product, RecView, and gained hands-on experience with Unix
+                and Jenkins pipelines. My favorite project at GTI was writing
+                all the tests for their Mission Server using Pytest.
               </p>
             </div>
           </div>
