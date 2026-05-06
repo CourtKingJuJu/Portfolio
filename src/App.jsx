@@ -65,26 +65,27 @@ function App() {
 
             <div className='mt-4 space-y-[14px] text-sm leading-relaxed text-zinc-400 sm:text-base sm:leading-[1.9]'>
               <p>
-                My name is Julian McCarty. I am a fourth year co-op computer
-                science student at Dalhousie and I also play Football! Along
-                with Football I participated in multiple other extra criculars
-                such as a Developer with the Dalhousie Blockchain Society.
+                My name is Julian McCarty. I am a fourth-year co-op Computer
+                Science student at Dalhousie, and I also play Football! Along
+                with Football, I participated in multiple other extracurricular
+                activities, such as being a Developer with the Dalhousie
+                Blockchain Society.
               </p>
 
               <p>
-                Additionally, with my CS degree I am working towards a
-                certificate in ML & AI at Dalhousie. I am very intrested in ML &
-                AI specifically Reinforcement Learning and would love to
-                continue working in the field in some degree after school. I
+                Additionally, with my CS degree, I am working towards a
+                certificate in ML & AI at Dalhousie. I am very interested in ML
+                & AI, specifically Reinforcement Learning, and would love to
+                continue working in the field to some degree after school. I
                 really enjoy hearing different perspectives about the topic in
-                ethics or just general discussion and would love to hear what
+                ethics or just general discussion, and would love to hear what
                 you think about it!
               </p>
 
               <p>
-                When I am not working on school or projects I love hanging out
-                with firends, playing pickup sports specifcally basketball and
-                learning new things.
+                When I am not working on school or projects, I love hanging out
+                with friends, playing pickup sports, specifically basketball,
+                and learning new things.
               </p>
             </div>
           </div>
@@ -141,7 +142,7 @@ function App() {
 
         <div>
           <h2 className='flex justify-center text-xl font-semibold tracking-tight text-[#4F8EF7] sm:text-2xl'>
-            Projects
+            My Work
           </h2>
 
           <div className='mt-6 grid gap-3.5 sm:grid-cols-2'>
@@ -150,11 +151,24 @@ function App() {
                 Random Forest Feature Selection
               </h3>
               <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
-                Created a Random Forest Feature selection for the cancerous
-                turmor dataset from scikitlearn. Has the opportunity to be
+                Created a Random Forest Feature selection model for the
+                cancerous tumour dataset from scikit-learn. It uses the Gini
+                Impurity score for the splits and has the opportunity to be
                 extended with a secondary Genetic Algorithm Selection.
               </p>
+              <div className='mt-3 flex flex-wrap gap-2'>
+                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                  Python
+                </span>
+                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                  Scikit-learn
+                </span>
+                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                  Feature Selection
+                </span>
+              </div>
             </div>
+
             <div className='cursor-default rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-colors hover:border-[#4F8EF7]'>
               <h3 className='text-sm font-semibold text-white'>
                 Neural Network from Scratch
@@ -163,6 +177,15 @@ function App() {
                 Implemented parts of a Neural Network from scratch by following
                 a nnfs.io tutorial.
               </p>
+              <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                Python
+              </span>
+              <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                Machine Learning
+              </span>
+              <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
+                Fully Connected Network
+              </span>
             </div>
             <div className='cursor-default rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-colors hover:border-[#4F8EF7]'>
               <h3 className='text-sm font-semibold text-white'>SmartSplit</h3>
