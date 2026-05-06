@@ -1,6 +1,7 @@
 import footballImg from './assets/football.webp';
 import consensusImg from './assets/consensus_2025.webp';
 import rockClimb from './assets/r_climb.webp';
+import { projects } from './data/projects';
 
 function App() {
   const handleProjectClick = (url) => {
@@ -150,93 +151,32 @@ function App() {
           </h2>
 
           <div className='mt-6 grid gap-3.5 sm:grid-cols-2'>
-            <div
-              onClick={() =>
-                handleProjectClick(
-                  'https://github.com/CourtKingJuJu/Feature-Selection-RFIGA'
-                )
-              }
-              className='cursor-pointer rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] hover:border-[#4F8EF7] hover:-translate-y-1 transition-all'
-            >
-              <h3 className='text-sm font-semibold text-white'>
-                Random Forest Feature Selection
-              </h3>
-              <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
-                Created a Random Forest Feature selection model for the
-                cancerous tumour dataset from scikit-learn. It uses the Gini
-                Impurity score for the splits and has the opportunity to be
-                extended with a secondary Genetic Algorithm Selection.
-              </p>
-              <div className='mt-3 flex flex-wrap gap-2'>
-                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                  Python
-                </span>
-                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                  Scikit-learn
-                </span>
-                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                  Feature Selection
-                </span>
-              </div>
-            </div>
+            {projects.map((project) => (
+              <div
+                key={project.title}
+                onClick={() => window.open(project.link, '_blank')}
+                className='cursor-pointer rounded-lg border border-white/[0.07] bg-[#111116] p-[22px] transition-all hover:border-[#4F8EF7] hover:-translate-y-1'
+              >
+                <h3 className='text-sm font-semibold text-white'>
+                  {project.title}
+                </h3>
 
-            <div
-              onClick={() =>
-                handleProjectClick(
-                  'https://github.com/CourtKingJuJu/Neural-Network'
-                )
-              }
-              className='cursor-pointer rounded-lg border border-white/[0.07] bg-[#111116] p-[22px]  hover:-translate-y-1 transition-all hover:border-[#4F8EF7]'
-            >
-              <h3 className='text-sm font-semibold text-white'>
-                Neural Network from Scratch
-              </h3>
-              <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
-                Implemented parts of a Neural Network from scratch. This
-                included creating a fully connected network with multiple layers
-                to mimic a full pass and adding a softmax function for
-                non-linearity. Tutorial from nnfs.io.
-              </p>
-              <div className='mt-3 flex flex-wrap gap-2'>
-                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                  Python
-                </span>
-                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                  Machine Learning
-                </span>
-                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                  FC Network
-                </span>
+                <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
+                  {project.desc}
+                </p>
+
+                <div className='mt-3 flex flex-wrap gap-2'>
+                  {project.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div
-              onClick={() =>
-                handleProjectClick(
-                  'https://github.com/lennartschaeffer/SmartSplit-Consensus2025'
-                )
-              }
-              className='cursor-pointer rounded-lg border border-white/[0.07] bg-[#111116] p-[22px]  hover:-translate-y-1 transition-all hover:border-[#4F8EF7]'
-            >
-              <h3 className='text-sm font-semibold text-white'>SmartSplit</h3>
-              <p className='mt-2 text-xs leading-[1.7] text-zinc-400'>
-                Aptos Blockchain Hackathon Project. SmartSplit is a Telegram bot
-                that allows users to use commands to split money on the Aptos
-                Blockchain. Worked in a two-man team, where I was responsible
-                for learning the Aptos-specific Move Programming Language and
-                implementing the Smart Contract
-              </p>
-              <div className='mt-3 flex flex-wrap gap-2'>
-                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                  Blockchain
-                </span>
-                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                  Aptos Move
-                </span>
-                <span className='text-[10px] px-2 py-1 rounded-md bg-[#4F8EF7]/10 text-[#4F8EF7] border border-[#4F8EF7]/20'>
-                  Problem Solving
-                </span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
