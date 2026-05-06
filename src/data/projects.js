@@ -12,7 +12,7 @@ export const projects = [
     link: 'https://github.com/CourtKingJuJu/Neural-Network',
   },
   {
-    title: 'Random Forest Feature Selection',
+    title: 'SmartSplit',
     desc: 'Aptos Blockchain Hackathon Project. SmartSplit is a Telegram bot that allows users to use commands to split money on the Aptos Blockchain. Worked in a two-man team, where I was responsible for learning the Aptos-specific Move Programming Language and implementing the Smart Contract',
     skills: ['Blockchain', 'Aptos Move', 'Problem Solving'],
     link: 'https://github.com/lennartschaeffer/SmartSplit-Consensus2025',
