@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Link
-https://julianmc-dev.vercel.app/#home
+https://julianmc-dev.vercel.app/
   
 ## References
 
