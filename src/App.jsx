@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='min-h-dvh bg-[#09090b] font-sans text-[#e4e4e7] antialiased'>
+      <div className='min-h-screen bg-[#09090b] font-sans text-[#e4e4e7] antialiased'>
         {/* Intro */}
         <section
           id='home'
