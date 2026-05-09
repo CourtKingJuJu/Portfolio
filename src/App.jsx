@@ -195,8 +195,7 @@ function App() {
           </div>
 
           <div className='mx-auto max-w-[750px] overflow-x-auto px-2'>
-            <div className='grid min-w-[320px] grid-cols-[1fr_2px_1fr] text-[#e4e4e7] sm:min-w-0 sm:grid-cols-[1fr_3px_1fr]'>
-              {' '}
+            <div className='grid min-w-[min(100%,560px)] grid-cols-[1fr_3px_1fr] text-[#e4e4e7] sm:min-w-0'>
               {/* Row 1 */}
               <div className='m-5 text-right text-[#4F8EF7]'>June 2024</div>
               <div className='relative bg-white/20'>
