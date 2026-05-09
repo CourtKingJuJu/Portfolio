@@ -195,7 +195,8 @@ function App() {
           </div>
 
           <div className='mx-auto max-w-[750px] overflow-x-auto px-2'>
-            <div className='grid min-w-[min(100%,560px)] grid-cols-[1fr_3px_1fr] text-[#e4e4e7] sm:min-w-0'>
+            <div className='grid min-w-[320px] grid-cols-[1fr_2px_1fr] text-[#e4e4e7] sm:min-w-0 sm:grid-cols-[1fr_3px_1fr]'>
+              {' '}
               {/* Row 1 */}
               <div className='m-5 text-right text-[#4F8EF7]'>June 2024</div>
               <div className='relative bg-white/20'>
@@ -212,7 +213,6 @@ function App() {
                   🤣
                 </p>
               </div>
-
               {/* Row 2 */}
               <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
                 <h2 className='m-0 text-[1.15em] font-bold'>QuickFacts Inc</h2>
@@ -228,7 +228,6 @@ function App() {
                 <div className='absolute left-1/2 top-0 h-[15px] w-[15px] -translate-x-1/2 rounded-full bg-white' />
               </div>
               <div className='m-5 text-[#4F8EF7]'>Jan 2025</div>
-
               {/* Row 3 */}
               <div className='m-5 text-right text-[#4F8EF7]'>Sep 2025</div>
               <div className='relative bg-white/20'>
