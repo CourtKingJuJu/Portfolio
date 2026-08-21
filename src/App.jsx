@@ -79,12 +79,13 @@ function App() {
 
                 <p>
                   Additionally, with my CS degree, I have completed a
-                  certificate in ML & AI at Dalhousie. I am very interested in
-                  ML & AI, specifically any intrinsically valuable application
-                  of the tool and its sustainability effects. I really enjoy
-                  hearing different perspectives about the topic in ethics, big
-                  tech, or just general discussion, and would love to hear what
-                  you think about it!
+                  certificate in Data Science & a certificate in AI and
+                  Intelligent Systems at Dalhousie. I am very interested in ML &
+                  AI, specifically any intrinsically valuable application of the
+                  tool and its sustainability effects. I really enjoy hearing
+                  different perspectives about the topic in ethics, big tech, or
+                  just general discussion, and would love to hear what you think
+                  about it!
                 </p>
 
                 <p>
