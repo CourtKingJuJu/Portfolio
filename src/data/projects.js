@@ -1,5 +1,11 @@
 export const projects = [
   {
+    title: 'Generative Flow Nets Exploration',
+    desc: 'Explored and learned about Generative Flow Nets. Compared generative flow net sampling to PPO sampling on cybersecurity threats using a created reward function proxy from the nsl-kdd dataset.',
+    skills: ['GFlowNets', 'Classifier Reward Shaping', 'PPO'],
+    link: 'https://github.com/CourtKingJuJu/GFlowNet-MiniProject-4250',
+  },
+  {
     title: 'Random Forest Feature Selection',
     desc: 'Created a Random Forest Feature selection model for the cancerous tumour dataset from scikit-learn. It uses the Gini Impurity score for the splits and has the opportunity to be extended with a secondary Genetic Algorithm Selection.',
     skills: ['Python', 'Scikit-learn', 'Feature Selection'],

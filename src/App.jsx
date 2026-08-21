@@ -70,21 +70,21 @@ function App() {
 
               <div className='mt-4 space-y-[14px] text-sm leading-relaxed text-zinc-400 sm:text-base sm:leading-[1.9]'>
                 <p>
-                  My name is Julian McCarty. I am a fourth-year co-op Computer
-                  Science student at Dalhousie, and I also play Football! Along
-                  with Football, I participated in multiple other
-                  extracurricular activities, such as being a Developer with the
+                  Hi! My name is Julian McCarty. I am 21, and I just finished my
+                  CS undergrad @ Dalhousie. During my time at Dal, I played
+                  American Football and participated in multiple other
+                  extracurricular activities, like being a Developer with the
                   Dalhousie Blockchain Society.
                 </p>
 
                 <p>
-                  Additionally, with my CS degree, I am working towards a
+                  Additionally, with my CS degree, I have completed a
                   certificate in ML & AI at Dalhousie. I am very interested in
-                  ML & AI, specifically Reinforcement Learning, and would love
-                  to continue working in the field to some degree after school.
-                  I really enjoy hearing different perspectives about the topic
-                  in ethics or just general discussion, and would love to hear
-                  what you think about it!
+                  ML & AI, specifically any intrinsically valuable application
+                  of the tool and its sustainability effects. I really enjoy
+                  hearing different perspectives about the topic in ethics, big
+                  tech, or just general discussion, and would love to hear what
+                  you think about it!
                 </p>
 
                 <p>
