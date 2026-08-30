@@ -18,7 +18,7 @@ function App() {
           <div className='inline-flex items-center gap-[7px] text-[11px] tracking-[0.12em] uppercase text-[#4F8EF7] border border-[#4F8EF7]/40 bg-[#4F8EF7]/10 px-[14px] py-[5px] rounded-[3px] mb-8'>
             {/* blinking dot */}
             <span className='w-[6px] h-[6px] bg-[#4F8EF7] rounded-full animate-pulse' />
-            CS Student @ Dalhousie
+            CS Grad @ Dalhousie
           </div>
 
           <h1 className='font-display text-[clamp(40px,8vw,72px)] font-extrabold leading-[0.96] tracking-[-0.03em] text-white'>
