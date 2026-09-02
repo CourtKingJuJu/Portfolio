@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 const RagSume = () => {
   const [question, setQuestion] = useState('');
@@ -52,7 +53,7 @@ const RagSume = () => {
               askRagSume();
             }
           }}
-          placeholder='What did Julian do at QuickFacts?'
+          placeholder='What did Julian do at GeoSpectrum?'
           className='flex-1 rounded-md border border-white/[0.07] bg-[#111116] px-4 py-3 text-sm text-white outline-none placeholder:text-zinc-600 focus:border-[#4F8EF7]'
         />
 
@@ -68,7 +69,7 @@ const RagSume = () => {
       {answer && (
         <div className='mt-6 rounded-lg border border-white/[0.07] bg-[#111116] p-5'>
           <p className='whitespace-pre-wrap text-sm leading-relaxed text-zinc-300'>
-            {answer}
+            <ReactMarkdown>{answer}</ReactMarkdown>
           </p>
         </div>
       )}

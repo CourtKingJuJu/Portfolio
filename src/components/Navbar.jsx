@@ -5,16 +5,21 @@ const Navbar = ({ onRagSume, onHome, currentPage }) => {
   const [open, setOpen] = useState(false);
 
   const goHome = () => {
-    if (onHome) {
+    if (currentPage !== 'home' && onHome) {
       onHome();
+
+      setTimeout(() => {
+        document.getElementById('home')?.scrollIntoView({
+          behavior: 'smooth',
+        });
+      }, 0);
+    } else {
+      document.getElementById('home')?.scrollIntoView({
+        behavior: 'smooth',
+      });
     }
 
     setOpen(false);
-
-    // If we're already on the home page, scroll to the top.
-    if (currentPage === 'home') {
-      window.location.hash = 'home';
-    }
   };
 
   const goToSection = (section) => {
@@ -23,7 +28,6 @@ const Navbar = ({ onRagSume, onHome, currentPage }) => {
     if (currentPage !== 'home' && onHome) {
       onHome();
 
-      // Wait for Home to render before scrolling.
       setTimeout(() => {
         document.getElementById(section)?.scrollIntoView({
           behavior: 'smooth',
@@ -92,9 +96,12 @@ const Navbar = ({ onRagSume, onHome, currentPage }) => {
             Contact
           </button>
 
+          {/* Separator */}
+          <div className='mx-2 h-4 w-px bg-white/15' />
+
           <button
             onClick={goToRagSume}
-            className={`ml-2 rounded px-3 py-1.5 transition ${
+            className={`rounded px-3 py-1.5 transition ${
               currentPage === 'ragsume'
                 ? 'bg-[#4F8EF7]/10 text-[#4F8EF7]'
                 : 'text-zinc-400 hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
@@ -107,7 +114,7 @@ const Navbar = ({ onRagSume, onHome, currentPage }) => {
         {/* Mobile Button */}
         <button
           onClick={() => setOpen(!open)}
-          className='md:hidden text-zinc-300'
+          className='text-zinc-300 md:hidden'
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -115,39 +122,50 @@ const Navbar = ({ onRagSume, onHome, currentPage }) => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className='md:hidden border-t border-white/[0.07] bg-[#111116]'>
+        <div className='border-t border-white/[0.07] bg-[#111116] md:hidden'>
           <div className='flex flex-col px-4 py-3 text-[11px] uppercase tracking-[0.08em]'>
             <button
               onClick={goHome}
-              className='rounded px-3 py-3 text-left text-zinc-400 hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
+              className={`rounded px-3 py-3 text-left transition ${
+                currentPage === 'home'
+                  ? 'bg-[#4F8EF7]/10 text-[#4F8EF7]'
+                  : 'text-zinc-400 hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
+              }`}
             >
               Home
             </button>
 
             <button
               onClick={() => goToSection('projects')}
-              className='rounded px-3 py-3 text-left text-zinc-400 hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
+              className='rounded px-3 py-3 text-left text-zinc-400 transition hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
             >
               Projects
             </button>
 
             <button
               onClick={() => goToSection('experience')}
-              className='rounded px-3 py-3 text-left text-zinc-400 hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
+              className='rounded px-3 py-3 text-left text-zinc-400 transition hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
             >
               Experience
             </button>
 
             <button
               onClick={() => goToSection('contact')}
-              className='rounded px-3 py-3 text-left text-zinc-400 hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
+              className='rounded px-3 py-3 text-left text-zinc-400 transition hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
             >
               Contact
             </button>
 
+            {/* Mobile Separator */}
+            <div className='my-1 h-px bg-white/[0.07]' />
+
             <button
               onClick={goToRagSume}
-              className='rounded px-3 py-3 text-left text-[#4F8EF7] hover:bg-[#4F8EF7]/10'
+              className={`rounded px-3 py-3 text-left transition ${
+                currentPage === 'ragsume'
+                  ? 'bg-[#4F8EF7]/10 text-[#4F8EF7]'
+                  : 'text-[#4F8EF7] hover:bg-[#4F8EF7]/10'
+              }`}
             >
               RagSume
             </button>

@@ -1,19 +1,20 @@
 import { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 function RagSumePage() {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const askRagSume = async () => {
-    if (!question.trim() || loading) return;
+  const askRagSume = async (submittedQuestion = question) => {
+    if (!submittedQuestion.trim() || loading) return;
 
     setLoading(true);
     setAnswer('');
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/chat?question=${encodeURIComponent(question)}`,
+        `http://127.0.0.1:8000/chat?question=${encodeURIComponent(submittedQuestion)}`,
         {
           method: 'POST',
         }
@@ -24,7 +25,6 @@ function RagSumePage() {
       }
 
       const data = await response.json();
-
       setAnswer(data.answer);
     } catch (error) {
       console.error(error);
@@ -76,11 +76,14 @@ function RagSumePage() {
                   {[
                     "What's Julian's experience with machine learning?",
                     "Tell me about Julian's co-op experience.",
-                    "What are Julian's career interests?",
+                    'How did Julian get into Football?',
                   ].map((suggestion) => (
                     <button
                       key={suggestion}
-                      onClick={() => setQuestion(suggestion)}
+                      onClick={() => {
+                        setQuestion(suggestion);
+                        askRagSume(suggestion);
+                      }}
                       className='rounded-md border border-white/[0.07] bg-[#18181f] px-3 py-2 text-xs text-zinc-400 transition hover:border-[#4F8EF7]/50 hover:text-[#4F8EF7]'
                     >
                       {suggestion}
@@ -109,6 +112,7 @@ function RagSumePage() {
 
                   <div>
                     <p className='text-sm font-semibold text-white'>RagSume</p>
+
                     <p className='text-[10px] uppercase tracking-[0.08em] text-zinc-600'>
                       AI Career Assistant
                     </p>
@@ -116,9 +120,9 @@ function RagSumePage() {
                 </div>
 
                 <div className='rounded-lg border border-white/[0.07] bg-[#18181f] p-5'>
-                  <p className='whitespace-pre-wrap text-sm leading-relaxed text-zinc-300'>
-                    {answer}
-                  </p>
+                  <div className='text-sm leading-relaxed text-zinc-300'>
+                    <ReactMarkdown>{answer}</ReactMarkdown>
+                  </div>
                 </div>
               </div>
             )}
@@ -142,7 +146,7 @@ function RagSumePage() {
               />
 
               <button
-                onClick={askRagSume}
+                onClick={() => askRagSume()}
                 disabled={loading || !question.trim()}
                 className='rounded-md bg-[#4F8EF7] px-5 py-3 text-xs font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#3a7af5] disabled:cursor-not-allowed disabled:opacity-40'
               >
