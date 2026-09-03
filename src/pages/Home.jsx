@@ -188,6 +188,7 @@ function Home() {
       </section>
 
       {/* Work Experience */}
+
       <section
         id='experience'
         className='mx-auto max-w-[860px] border-t border-white/[0.07] px-5 py-14 sm:px-10 scroll-mt-11'
@@ -197,69 +198,142 @@ function Home() {
           <div className='h-px flex-1 bg-white/10'></div>
         </div>
 
-        <div className='mx-auto max-w-[750px] overflow-x-auto px-2'>
-          <div className='grid min-w-[min(100%,560px)] grid-cols-[1fr_3px_1fr] text-[#e4e4e7] sm:min-w-0'>
-            {/* Row 1 */}
-            <div className='m-5 text-right text-[#4F8EF7]'>June 2024</div>
+        {/* ================= DESKTOP ================= */}
+        <div className='hidden sm:block'>
+          <div className='mx-auto max-w-[750px]'>
+            <div className='grid grid-cols-[1fr_3px_1fr] text-[#e4e4e7]'>
+              {/* Row 1 */}
+              <div className='m-5 text-right text-[#4F8EF7]'>June 2024</div>
 
-            <div className='relative bg-white/20'>
-              <div className='absolute left-1/2 top-0 h-[15px] w-[15px] -translate-x-1/2 rounded-full bg-white' />
+              <div className='relative bg-white/20'>
+                <div className='absolute left-1/2 top-0 h-[15px] w-[15px] -translate-x-1/2 rounded-full bg-white' />
+              </div>
+
+              <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
+                <h2 className='m-0 text-[1.15em] font-bold'>
+                  Dexter Construction
+                </h2>
+                <p className='mt-2 leading-normal text-zinc-400'>
+                  After not receiving my first co-op, I decided to stay in the
+                  city and work in construction. During this time, I worked on
+                  personal projects and built my network. This made me lock in
+                  🤣
+                </p>
+              </div>
+
+              {/* Row 2 */}
+              <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
+                <h2 className='m-0 text-[1.15em] font-bold'>QuickFacts Inc</h2>
+                <p className='mt-2 leading-normal text-zinc-400'>
+                  QuickFacts was a startup and my first real co-op experience. I
+                  worked as a fully remote Software Intern. During that time, I
+                  got experience with both front-end and back-end JavaScript,
+                  and worked on moving real data into a custom CMS we were
+                  building.
+                </p>
+              </div>
+
+              <div className='relative bg-white/20'>
+                <div className='absolute left-1/2 top-0 h-[15px] w-[15px] -translate-x-1/2 rounded-full bg-white' />
+              </div>
+
+              <div className='m-5 text-[#4F8EF7]'>Jan 2025</div>
+
+              {/* Row 3 */}
+              <div className='m-5 text-right text-[#4F8EF7]'>Sep 2025</div>
+
+              <div className='relative bg-white/20'>
+                <div className='absolute left-1/2 top-0 h-[15px] w-[15px] -translate-x-1/2 rounded-full bg-white' />
+              </div>
+
+              <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
+                <h2 className='m-0 text-[1.15em] font-bold'>
+                  Geospectrum Technologies
+                </h2>
+                <p className='mt-2 leading-normal text-zinc-400'>
+                  For my second co-op, I wanted to try working in person, so I
+                  joined GTI as a Software QA Co-op. I helped write tests for
+                  their product, RecView, and gained hands-on experience with
+                  Unix and Jenkins pipelines. My favorite project at GTI was
+                  writing all the tests for their Mission Server using Pytest.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ================= MOBILE ================= */}
+        <div className='sm:hidden'>
+          <div className='relative ml-2 pl-7'>
+            {/* Vertical timeline line */}
+            <div className='absolute left-[5px] top-2 bottom-2 w-px bg-white/20' />
+
+            {/* Dexter */}
+            <div className='relative pb-10'>
+              <div className='absolute left-[-27px] top-1 h-[11px] w-[11px] rounded-full bg-white' />
+
+              <div className='mb-3 text-[11px] uppercase tracking-[0.15em] text-[#4F8EF7]'>
+                June 2024
+              </div>
+
+              <div className='rounded-lg border border-white/[0.07] bg-[#111116] p-5 shadow-lg'>
+                <h2 className='m-0 text-base font-bold'>Dexter Construction</h2>
+
+                <p className='mt-2 text-sm leading-relaxed text-zinc-400'>
+                  After not receiving my first co-op, I decided to stay in the
+                  city and work in construction. During this time, I worked on
+                  personal projects and built my network. This made me lock in
+                  🤣
+                </p>
+              </div>
             </div>
 
-            <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
-              <h2 className='m-0 text-[1.15em] font-bold'>
-                Dexter Construction
-              </h2>
+            {/* QuickFacts */}
+            <div className='relative pb-10'>
+              <div className='absolute left-[-27px] top-1 h-[11px] w-[11px] rounded-full bg-white' />
 
-              <p className='mt-2 leading-normal text-zinc-400'>
-                After not receiving my first co-op, I decided to stay in the
-                city and work in construction. During this time, I worked on
-                personal projects and built my network. This made me lock in 🤣
-              </p>
+              <div className='mb-3 text-[11px] uppercase tracking-[0.15em] text-[#4F8EF7]'>
+                Jan 2025
+              </div>
+
+              <div className='rounded-lg border border-white/[0.07] bg-[#111116] p-5 shadow-lg'>
+                <h2 className='m-0 text-base font-bold'>QuickFacts Inc</h2>
+
+                <p className='mt-2 text-sm leading-relaxed text-zinc-400'>
+                  QuickFacts was a startup and my first real co-op experience. I
+                  worked as a fully remote Software Intern. During that time, I
+                  got experience with both front-end and back-end JavaScript,
+                  and worked on moving real data into a custom CMS we were
+                  building.
+                </p>
+              </div>
             </div>
 
-            {/* Row 2 */}
-            <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
-              <h2 className='m-0 text-[1.15em] font-bold'>QuickFacts Inc</h2>
+            {/* Geospectrum */}
+            <div className='relative'>
+              <div className='absolute left-[-27px] top-1 h-[11px] w-[11px] rounded-full bg-white' />
 
-              <p className='mt-2 leading-normal text-zinc-400'>
-                QuickFacts was a startup and my first real co-op experience. I
-                worked as a fully remote Software Intern. During that time, I
-                got experience with both front-end and back-end JavaScript, and
-                worked on moving real data into a custom CMS we were building.
-              </p>
-            </div>
+              <div className='mb-3 text-[11px] uppercase tracking-[0.15em] text-[#4F8EF7]'>
+                Sep 2025
+              </div>
 
-            <div className='relative bg-white/20'>
-              <div className='absolute left-1/2 top-0 h-[15px] w-[15px] -translate-x-1/2 rounded-full bg-white' />
-            </div>
+              <div className='rounded-lg border border-white/[0.07] bg-[#111116] p-5 shadow-lg'>
+                <h2 className='m-0 text-base font-bold'>
+                  Geospectrum Technologies
+                </h2>
 
-            <div className='m-5 text-[#4F8EF7]'>Jan 2025</div>
-
-            {/* Row 3 */}
-            <div className='m-5 text-right text-[#4F8EF7]'>Sep 2025</div>
-
-            <div className='relative bg-white/20'>
-              <div className='absolute left-1/2 top-0 h-[15px] w-[15px] -translate-x-1/2 rounded-full bg-white' />
-            </div>
-
-            <div className='m-5 rounded-lg border border-white/[0.07] bg-[#111116] p-6 shadow-lg'>
-              <h2 className='m-0 text-[1.15em] font-bold'>
-                Geospectrum Technologies
-              </h2>
-
-              <p className='mt-2 leading-normal text-zinc-400'>
-                For my second co-op, I wanted to try working in person, so I
-                joined GTI as a Software QA Co-op. I helped write tests for
-                their product, RecView, and gained hands-on experience with Unix
-                and Jenkins pipelines. My favorite project at GTI was writing
-                all the tests for their Mission Server using Pytest.
-              </p>
+                <p className='mt-2 text-sm leading-relaxed text-zinc-400'>
+                  For my second co-op, I wanted to try working in person, so I
+                  joined GTI as a Software QA Co-op. I helped write tests for
+                  their product, RecView, and gained hands-on experience with
+                  Unix and Jenkins pipelines. My favorite project at GTI was
+                  writing all the tests for their Mission Server using Pytest.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Contact Me */}
       <section
         id='contact'
