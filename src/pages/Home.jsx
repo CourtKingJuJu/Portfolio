@@ -25,8 +25,8 @@ function Home() {
         </h1>
 
         <p className='mt-5 max-w-[480px] text-[15px] leading-relaxed text-zinc-400 sm:text-base'>
-          Fourth Year Co-op Computer Science Student | Dalhousie Football Strong
-          intrests in AI/ML!
+          Dalhousie Computer Science Grad | Dalhousie Football Alum Strong
+          interests in AI/ML!
         </p>
 
         <div className='mt-8 flex flex-wrap gap-2.5'>
