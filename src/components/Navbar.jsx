@@ -1,7 +1,8 @@
 import { useState } from 'react';
+
 import { Menu, X } from 'lucide-react';
 
-const Navbar = ({ onRagSume, onHome, currentPage }) => {
+const Navbar = ({ onRagSume, onHome, onTravel, currentPage }) => {
   const [open, setOpen] = useState(false);
 
   const goHome = () => {
@@ -47,6 +48,14 @@ const Navbar = ({ onRagSume, onHome, currentPage }) => {
 
     if (onRagSume) {
       onRagSume();
+    }
+  };
+
+  const goToTravel = () => {
+    setOpen(false);
+
+    if (onTravel) {
+      onTravel();
     }
   };
 
@@ -109,6 +118,17 @@ const Navbar = ({ onRagSume, onHome, currentPage }) => {
           >
             RagSume
           </button>
+
+          <button
+            onClick={goToTravel}
+            className={`rounded px-3 py-1.5 transition ${
+              currentPage === 'travel'
+                ? 'bg-[#4F8EF7]/10 text-[#4F8EF7]'
+                : 'text-zinc-400 hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
+            }`}
+          >
+            Travel
+          </button>
         </div>
 
         {/* Mobile Button */}
@@ -164,10 +184,21 @@ const Navbar = ({ onRagSume, onHome, currentPage }) => {
               className={`rounded px-3 py-3 text-left transition ${
                 currentPage === 'ragsume'
                   ? 'bg-[#4F8EF7]/10 text-[#4F8EF7]'
-                  : 'text-[#4F8EF7] hover:bg-[#4F8EF7]/10'
+                  : 'text-zinc-400 hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
               }`}
             >
               RagSume
+            </button>
+
+            <button
+              onClick={goToTravel}
+              className={`rounded px-3 py-3 text-left transition ${
+                currentPage === 'travel'
+                  ? 'bg-[#4F8EF7]/10 text-[#4F8EF7]'
+                  : 'text-zinc-400 hover:bg-[#4F8EF7]/10 hover:text-[#4F8EF7]'
+              }`}
+            >
+              Travel
             </button>
           </div>
         </div>
